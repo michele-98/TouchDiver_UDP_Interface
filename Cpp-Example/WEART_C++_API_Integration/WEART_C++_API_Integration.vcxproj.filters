@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>6113d94b-04b1-4c17-80ff-b61d60a30e9f</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>eb15c2a3-6a31-4d03-8100-90572cedc5d0</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="WEART_SDK">
+      <UniqueIdentifier>{7ea97dec-a0b6-4ea5-b611-ab3d1f48a7c2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="WEART_SDK\WeArtClient.cpp">
+      <Filter>WEART_SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="WEART_SDK\WeArtHapticObject.cpp">
+      <Filter>WEART_SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="WEART_SDK\WeArtThimbleTrackingObject.cpp">
+      <Filter>WEART_SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="WEART_SDK\WeArtTrackingCalibration.cpp">
+      <Filter>WEART_SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="WEART_SDK\WeArtMessages.cpp">
+      <Filter>WEART_SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="WEART_SDK\WeArtMessageSerializer.cpp">
+      <Filter>WEART_SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="WEART_SDK\WeArtEffect.cpp" />
+    <ClCompile Include="WEART_SDK\MiddlewareStatusListener.cpp">
+      <Filter>WEART_SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="WEART_SDK\WeArtTrackingRawData.cpp">
+      <Filter>WEART_SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="WEART_SDK\WeArtAnalogSensorData.cpp">
+      <Filter>WEART_SDK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="WEART_SDK\WeArtThimbleTrackingObject.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtClient.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtClosure.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtCommon.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtController.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtEffect.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtForce.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtHapticObject.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtMessages.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtMessageSerializer.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtTemperature.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtTexture.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtMessageListener.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtTrackingCalibration.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\nlohmann\json.hpp" />
+    <ClInclude Include="WEART_SDK\MiddlewareStatusListener.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtTrackingRawData.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="WEART_SDK\WeArtAnalogSensorData.h">
+      <Filter>WEART_SDK</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hand.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\battery.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\battery_charging.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+    <Page Include="HandStatus.xaml" />
+  </ItemGroup>
+</Project>
