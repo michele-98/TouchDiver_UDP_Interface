@@ -23,12 +23,17 @@ namespace TouchDiver_Simple
         {
             WeArtClient _weartClient;
 
-            // create WEART Controller
             WeArtController weArtController = new WeArtController();
             _weartClient = weArtController.Client;
 
+            bool isConnected = _weartClient.IsConnected;
+
+            Console.WriteLine("Status: "+ isConnected.ToString());
+            Console.ReadKey();
+
             _weartClient.Start();
-            Console.WriteLine("avviato, premi un tasto per continuare");
+
+            Console.WriteLine("START");
             Console.ReadKey();
 
             WeArtHapticObject hapticObject = new WeArtHapticObject(_weartClient);
