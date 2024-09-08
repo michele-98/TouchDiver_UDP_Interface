@@ -205,17 +205,17 @@ if __name__ == '__main__':
         valuesAVG = np.mean(values_, axis=1)
 
         normalizedCommand_ = np.abs(valuesAVG - baselineAVG)*10
-        print(normalizedCommand_)
+        #print(normalizedCommand_)
 
         normalizedCommand_index = normalizedCommand_[0]
 
         if len(normalizedCommand_)>1:
             normalizedCommand_thumb = normalizedCommand_[1]
             numberOfFingers = 2
-            print("2 FIngers")
+            #print("2 FIngers")
         else:
             numberOfFingers = 1
-            print("1 Finger")
+            #print("1 Finger")
 
 
         # print("Force Value:", normalizedCommand)
